@@ -21,7 +21,7 @@ namespace HasCMoGBeenPwned
             public DateTime AddedDate { get; set; }
             public string LogoPath { get; set; }
 
-            private static NPoco.Database db = new NPoco.Database("Server=cmogreport;Integrated Security=SSPI;Database=HaveIBeenPwned", NPoco.DatabaseType.SqlServer2008);
+            private static NPoco.Database db = new NPoco.Database("Server=SERVER NAME;Integrated Security=SECURITY TYPE;Database=DB NAME", NPoco.DatabaseType.SqlServer2008);
             //----------------------------------------------------------------------------------------------------------------
             public override string ToString()
             {
@@ -73,7 +73,7 @@ namespace HasCMoGBeenPwned
             public Guid ID { get; set; }
             public string Email { get; set; }
 
-            private static NPoco.Database db = new NPoco.Database("Server=cmogreport;Integrated Security=SSPI;Database=HaveIBeenPwned", NPoco.DatabaseType.SqlServer2008);
+            private static NPoco.Database db = new NPoco.Database("Server=SERVER NAME;Integrated Security=SECURITY TYPE;Database=DB NAME", NPoco.DatabaseType.SqlServer2008);
             //----------------------------------------------------------------------------------------------------------------
             public override string ToString()
             {
@@ -136,7 +136,7 @@ namespace HasCMoGBeenPwned
             public string ManagerName { get; set; }
             public string ManagerPhone { get; set; }
 
-            private static readonly NPoco.Database db = new NPoco.Database("Server=cmogreport;Integrated Security=SSPI;Database=AD_Integration", NPoco.DatabaseType.SqlServer2008);
+            private static readonly NPoco.Database db = new NPoco.Database("Server=SERVER NAME;Integrated Security=SECURITY TYPE;Database=DB NAME", NPoco.DatabaseType.SqlServer2008);
             //----------------------------------------------------------------------------------------------------------------
             public override string ToString()
             {
